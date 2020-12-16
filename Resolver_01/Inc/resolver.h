@@ -8,6 +8,7 @@
 #include "stdbool.h"
 #include "stdio.h"
 #include "string.h"
+#include "math.h"
 //******************************************************************************
 // Constants
 //******************************************************************************
@@ -26,6 +27,18 @@ typedef struct{
   float Out;
 }
 BPF2_t;
+
+
+typedef struct{
+  float S1;
+  float A2;
+  float A3;
+  float B2;
+  float Prev1;
+  float Prev2;
+  float Out;
+}
+LPF2_t;
 
 
 //******************************************************************************
